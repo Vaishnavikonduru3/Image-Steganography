@@ -1,8 +1,9 @@
-**Python GUI based application for Image Steganography**
+Python GUI based application for Image Steganography
 
 Steganography is the process of hiding a secret message within a larger one in such a way that someone can not know the presence or contents of the hidden message. The purpose of Steganography is to maintain secret communication between two parties. Unlike cryptography, which conceals the contents of a secret message, steganography conceals the very fact that a message is communicated.
 
-**Encoding**
+Encoding
+
 The algorithm is as follows:
 For each character within the data, its ASCII value is taken and converted into 8-bit binary.
 
@@ -12,7 +13,8 @@ The corresponding RGB value and binary data are compared. If the digit is 1 then
 
 The ninth value determines if more pixels should be read or not. If there's more data to be read, i.e. encoded or decoded, then the ninth pixel changes to even. Otherwise, if we would like to prevent reading pixels further, then make it odd.
 
-**Decoding**
+Decoding
+
 For decoding, we shall attempt to find the way to reverse the previous algorithm that we wont to encode data. Again, three pixels are read at a time. the primary 8 RGB values give us information about the key data, and therefore the ninth value tells us whether to maneuver forward or not.
 
 For the primary eight values, if the worth is odd, then the binary bit is 1, otherwise it's 0.
